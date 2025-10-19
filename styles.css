@@ -106,6 +106,10 @@ h2{
   color: #d9534f;
 }
 
+.highlight {
+  background-color: #fffc51;
+}
+
 .buff-btn {
   padding: 4px 8px;
   font-size: 1rem;
