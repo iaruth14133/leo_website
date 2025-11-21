@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      // ページ読み込み時にロック状態を確認
+      if (sessionStorage.getItem("unlocked") !== "true") {
+        // 未解錠ならトップに戻す
+        window.location.href = "index.html";
+      }
+    </script>
   </head>
   <body class="subpage">
     <!-- ===== Global Header / Navigation ===== -->
@@ -25,9 +33,10 @@
           <!-- ナビゲーションメニュー -->
           <ul id="nav-list" class="nav-list">
             <li><a href="index.html">ホーム</a></li>
-            <li><a href="sword.html">聖剣争奪イベント</a></li>
-            <li><a href="tri.html">三盟争覇イベント</a></li>
-            <li><a href="lost.html">失われた遺跡</a></li>
+            <li><a href="king.html">王城戦</a></li>
+            <li><a href="sword.html" class="locked">聖剣争奪イベント(LEO専用)</a></li>
+            <li><a href="tri.html" class="locked">三盟争覇イベント(LEO専用)</a></li>
+            <li><a href="lost.html" class="locked">失われた遺跡(LEO専用)</a></li>
             <li><a href="buff.html">バフシミュレーター</a></li>
           </ul>
 

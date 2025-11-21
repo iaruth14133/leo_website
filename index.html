@@ -26,18 +26,29 @@
           <!-- ナビゲーションメニュー -->
           <ul id="nav-list" class="nav-list">
             <li><a href="index.html">ホーム</a></li>
-            <li><a href="sword.html">聖剣争奪イベント</a></li>
-            <li><a href="tri.html">三盟争覇イベント</a></li>
-            <li><a href="lost.html">失われた遺跡</a></li>
+            <li><a href="king.html">王城戦</a></li>
+            <li><a href="sword.html" class="locked">聖剣争奪イベント(LEO専用)</a></li>
+            <li><a href="tri.html" class="locked">三盟争覇イベント(LEO専用)</a></li>
+            <li><a href="lost.html" class="locked">失われた遺跡(LEO専用)</a></li>
             <li><a href="buff.html">バフシミュレーター</a></li>
           </ul>
-
-          <script src="script.js"></script>
         </nav>
       </div>
       <div>
         <img src="./picture_home/fern.png" width="410px" height="auto"></img>
       </div>
+
+      <div id="keyword-area">
+        <p>漆黒の証を示し、LEO専用ページへと進むのだ！</p>
+        <form id="keyword-form">
+          <input id="keyword-input" placeholder="キーワード" />
+          <button type="submit">送信</button>
+        </form>
+        <p id="keyword-message" style="color:red;"></p>
+        <p></p>
+      </div>
+
+      <script src="script.js"></script>
     </header>
   </body>
 </html>

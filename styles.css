@@ -115,3 +115,9 @@ h2{
   font-size: 1rem;
   margin: 4px 2px;
 }
+
+#mt-table td {
+  text-align: center;   /* 横方向の中央揃え */
+  vertical-align: middle; /* 縦方向の中央揃え */
+  font-size: 16px;
+}
